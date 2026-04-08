@@ -47,7 +47,7 @@ var FirebaseBridgeLib = {
 			return;
 		}
 
-		var baseUrl = `https://firestore.googleapis.com/v1/projects/${auth.projectId}/databases/(default)/documents`;
+		var baseUrl = "https://firestore.googleapis.com/v1/projects/" + auth.projectId + "/databases/(default)/documents";
 
 		var headers = {
 			"Content-Type": "application/json",
