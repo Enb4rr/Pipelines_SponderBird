@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class ScoreManager : MonoBehaviour
 
     private float sessionStartTime = 0f;
     private int pipesPassed = 0;
+    
 
     private void Awake()
     {
