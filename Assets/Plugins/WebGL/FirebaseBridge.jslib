@@ -5,7 +5,7 @@ var FirebaseBridgeLib = {
         }
 
         function handleAuth(data) {
-            window.__dbAuth.uid = data.uid;
+            window.__fbAuth.uid = data.uid;
             window.__fbAuth.idToken = data.idToken;
             window.__fbAuth.displayName = data.displayName || "Player";
             window.__fbAuth.projectId = data.projectId || "";
