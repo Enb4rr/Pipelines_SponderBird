@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 945971937}
   - component: {fileID: 945971938}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1062728729}
   - component: {fileID: 1062728730}
   m_Layer: 0
-  m_Name: Score Manager
+  m_Name: ScoreManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 1807335162}
   - component: {fileID: 1807335163}
   m_Layer: 0
-  m_Name: Firebase Manager
+  m_Name: FirebaseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
