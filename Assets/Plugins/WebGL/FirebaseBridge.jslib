@@ -32,7 +32,7 @@ var FirebaseBridgeLib = {
         }
 
         if (window.__fbAuth && window.__fbAuth.uid && window.__fbAuth.idToken) {
-            var payload = JSON.stringigy(window.__fbAuth);
+            var payload = JSON.stringify(window.__fbAuth);
             SendMessage("FirebaseManager", "OnAuthReceived", payload);
         }
     },
@@ -59,8 +59,8 @@ var FirebaseBridgeLib = {
                 userId: { stringValue: auth.uid },
                 score: { integerValue: String(parsed.score) },
                 pipes: { integerValue: String(parsed.pipes) },
-                duration: { integerValue: String(parsed.duration)},
-                timestamp: { timestampValue: new Date().toISOString()}
+                duration: { integerValue: String(parsed.duration) },
+                timestamp: { timestampValue: new Date().toISOString() },
             }
         }
 
@@ -107,7 +107,7 @@ var FirebaseBridgeLib = {
         })
         .then(function (res) { return res.json(); })
         .then(function (data) { console.log("User Profile Updated"); })
-        .catch(function (err) { console.error("User PATCH failed", e); });
+        .catch(function (err) { console.error("User PATCH failed", err); });
     }
 };
 
